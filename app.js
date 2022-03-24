@@ -23,6 +23,7 @@ addForm.addEventListener('submit', e => {
   
   if(task.length){
     generateTemplate(task);
+    addForm.reset();
   }
 
 });
