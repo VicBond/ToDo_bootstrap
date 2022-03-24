@@ -12,7 +12,7 @@ const generateTemplate = task => {
   `;
 
   list.innerHTML += html;
-  
+
 };
 
 addForm.addEventListener('submit', e => {
@@ -21,5 +21,8 @@ addForm.addEventListener('submit', e => {
   const task = addForm.add.value.trim();
   // console.log(task);
   
-  generateTemplate(task);
+  if(task.length){
+    generateTemplate(task);
+  }
+
 });
